@@ -44,7 +44,10 @@ public class Device {
 
     @Override
     public String toString() {
-        return "Type: " + type + ", Name: " + name + ", Price: " + price + ", Weight: " + weight;
+        return "Type: " + type + "\n" +
+                "Name: " + name + "\n" +
+                "Price: " + price + "\n" +
+                "Weight: " + weight;
     }
 
 }

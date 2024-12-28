@@ -1,5 +1,6 @@
 package org.example.demo;
 
+import javafx.event.ActionEvent;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Button;
 import javafx.collections.FXCollections;
@@ -132,11 +133,20 @@ public class HelloController {
         // Получаем выбранный объект из ListView
         Device selectedDevice = listView.getSelectionModel().getSelectedItem();
 
-        // Если объект выбран, выводим его текстовое представление в Label
+    }
+    @FXML
+    public void removeDevice() {
+        // Получаем выбранное устройство из ListView
+        Device selectedDevice = listView.getSelectionModel().getSelectedItem();
+
+        // Проверяем, выбрано ли устройство
         if (selectedDevice != null) {
-            selectedText.setText(selectedDevice.toString());
+            // Удаляем устройство из ObservableList
+            devices.remove(selectedDevice);
+            System.out.println("Device removed: " + selectedDevice);
+        } else {
+            System.out.println("No device selected for removal");
         }
     }
-
 }
 

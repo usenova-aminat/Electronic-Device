@@ -2,7 +2,6 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
@@ -11,16 +10,16 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="530.0" prefWidth="870.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo.HelloController">
-   <TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="428.0" tabClosingPolicy="UNAVAILABLE">
+<AnchorPane prefHeight="530.0" prefWidth="870.0" style="-fx-background-color: #2d3250;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo.HelloController">
+   <TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="472.0" tabClosingPolicy="UNAVAILABLE">
    <tabs>
     <Tab text="Smartphone">
       <content>
-        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="502.0" prefWidth="436.0">
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="502.0" prefWidth="429.0">
                <children>
                   <VBox layoutX="32.0" layoutY="52.0" prefHeight="296.0" prefWidth="402.0">
                      <children>
-                        <TextField fx:id="smartphoneNameField" prefHeight="34.0" prefWidth="430.0" promptText="name">
+                        <TextField fx:id="smartphoneNameField" prefHeight="34.0" prefWidth="430.0" promptText="name" style="-fx-border-radius: 4; -fx-border-width: 2; -fx-border-color: #ffb17a;">
                            <padding>
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </padding>
@@ -28,7 +27,7 @@
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </VBox.margin>
                         </TextField>
-                        <TextField fx:id="smartphonePriceField" prefHeight="35.0" prefWidth="430.0" promptText="price">
+                        <TextField fx:id="smartphonePriceField" prefHeight="35.0" prefWidth="430.0" promptText="price" style="-fx-border-radius: 4; -fx-border-width: 2; -fx-border-color: #ffb17a;">
                            <padding>
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </padding>
@@ -36,7 +35,7 @@
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </VBox.margin>
                         </TextField>
-                        <TextField fx:id="smartphoneWeightField" promptText="weight">
+                        <TextField fx:id="smartphoneWeightField" promptText="weight" style="-fx-border-radius: 4; -fx-border-width: 2; -fx-border-color: #ffb17a;">
                            <VBox.margin>
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </VBox.margin>
@@ -44,7 +43,7 @@
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </padding>
                         </TextField>
-                        <TextField fx:id="smartphoneScreenSizeField" promptText="screen size">
+                        <TextField fx:id="smartphoneScreenSizeField" promptText="screen size" style="-fx-border-radius: 4; -fx-border-width: 2; -fx-border-color: #ffb17a;">
                            <VBox.margin>
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </VBox.margin>
@@ -52,7 +51,7 @@
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </padding>
                         </TextField>
-                        <TextField fx:id="smartphoneCameraResolutionField" promptText="camera resolution">
+                        <TextField fx:id="smartphoneCameraResolutionField" promptText="camera resolution" style="-fx-border-radius: 4; -fx-border-width: 2; -fx-border-color: #ffb17a;">
                            <VBox.margin>
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </VBox.margin>
@@ -61,7 +60,10 @@
                            </padding>
                         </TextField>
                      </children></VBox>
-                  <Button fx:id="smartphoneaddDevice" layoutX="167.0" layoutY="390.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="131.0" text="Add Smartphone" onAction="#addSmartphone"/>
+                  <Button fx:id="smartphoneaddDevice" layoutX="167.0" layoutY="390.0" mnemonicParsing="false" onAction="#addSmartphone" prefHeight="31.0" prefWidth="146.0" style="-fx-background-color: #2d3250;" text="Add Smartphone" textFill="#ffb17a">
+                        <font>
+                           <Font name="System Bold" size="15.0" />
+                        </font></Button>
                </children></AnchorPane>
       </content>
     </Tab>
@@ -71,7 +73,7 @@
                <children>
                   <VBox layoutX="32.0" layoutY="52.0" prefHeight="296.0" prefWidth="402.0">
                      <children>
-                        <TextField fx:id="laptopNameField" prefHeight="34.0" prefWidth="430.0" promptText="name">
+                        <TextField fx:id="laptopNameField" prefHeight="34.0" prefWidth="430.0" promptText="name" style="-fx-border-radius: 4; -fx-border-width: 2; -fx-border-color: #ffb17a;">
                            <padding>
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </padding>
@@ -79,7 +81,7 @@
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </VBox.margin>
                         </TextField>
-                        <TextField fx:id="laptopPriceField" prefHeight="35.0" prefWidth="430.0" promptText="price">
+                        <TextField fx:id="laptopPriceField" prefHeight="35.0" prefWidth="430.0" promptText="price" style="-fx-border-radius: 4; -fx-border-width: 2; -fx-border-color: #ffb17a;">
                            <padding>
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </padding>
@@ -87,7 +89,7 @@
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </VBox.margin>
                         </TextField>
-                        <TextField fx:id="laptopWeightField" promptText="weight">
+                        <TextField fx:id="laptopWeightField" promptText="weight" style="-fx-border-radius: 4; -fx-border-width: 2; -fx-border-color: #ffb17a;">
                            <VBox.margin>
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </VBox.margin>
@@ -95,7 +97,7 @@
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </padding>
                         </TextField>
-                        <TextField fx:id="laptopRamSizeField" promptText="ram size">
+                        <TextField fx:id="laptopRamSizeField" promptText="ram size" style="-fx-border-radius: 4; -fx-border-width: 2; -fx-border-color: #ffb17a;">
                            <VBox.margin>
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </VBox.margin>
@@ -103,7 +105,7 @@
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </padding>
                         </TextField>
-                        <TextField fx:id="laptopProcessorTypeField" promptText="processor type">
+                        <TextField fx:id="laptopProcessorTypeField" promptText="processor type" style="-fx-border-radius: 4; -fx-border-width: 2; -fx-border-color: #ffb17a;">
                            <VBox.margin>
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </VBox.margin>
@@ -113,7 +115,10 @@
                         </TextField>
                      </children>
                   </VBox>
-                  <Button fx:id="laptopaddDevice" layoutX="167.0" layoutY="390.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="131.0" text="Add Laptop" onAction="#addLaptop"/>
+                  <Button fx:id="laptopaddDevice" layoutX="167.0" layoutY="390.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="131.0" style="-fx-background-color: #2d3250;" text="Add Laptop" onAction="#addLaptop" textFill="#ffb17a">
+                        <font>
+                           <Font name="System Bold" size="15.0" />
+                        </font></Button>
                </children></AnchorPane>
       </content>
     </Tab>
@@ -123,7 +128,7 @@
                <children>
                   <VBox layoutX="32.0" layoutY="52.0" prefHeight="296.0" prefWidth="402.0">
                      <children>
-                        <TextField fx:id="tabletNameField" prefHeight="34.0" prefWidth="430.0" promptText="name">
+                        <TextField fx:id="tabletNameField" prefHeight="34.0" prefWidth="430.0" promptText="name" style="-fx-border-radius: 4; -fx-border-color: #ffb17a; -fx-border-width: 2;">
                            <padding>
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </padding>
@@ -131,7 +136,7 @@
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </VBox.margin>
                         </TextField>
-                        <TextField fx:id="tabletPriceField" prefHeight="35.0" prefWidth="430.0" promptText="price">
+                        <TextField fx:id="tabletPriceField" prefHeight="35.0" prefWidth="430.0" promptText="price" style="-fx-border-radius: 4; -fx-border-width: 2; -fx-border-color: #ffb17a;">
                            <padding>
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </padding>
@@ -139,7 +144,7 @@
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </VBox.margin>
                         </TextField>
-                        <TextField fx:id="tabletWeightField" promptText="weight">
+                        <TextField fx:id="tabletWeightField" promptText="weight" style="-fx-border-radius: 4; -fx-border-width: 2; -fx-border-color: #ffb17a;">
                            <VBox.margin>
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </VBox.margin>
@@ -147,7 +152,7 @@
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </padding>
                         </TextField>
-                        <TextField fx:id="tabletBatteryLifeField" promptText="battery life ">
+                        <TextField fx:id="tabletBatteryLifeField" promptText="battery life " style="-fx-border-radius: 4; -fx-border-width: 2; -fx-border-color: #ffb17a;">
                            <VBox.margin>
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </VBox.margin>
@@ -155,7 +160,7 @@
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </padding>
                         </TextField>
-                        <TextField fx:id="tabletHasStylusField" promptText="has stalus">
+                        <TextField fx:id="tabletHasStylusField" promptText="has stalus" style="-fx-border-radius: 4; -fx-border-width: 2; -fx-border-color: #ffb17a;">
                            <VBox.margin>
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </VBox.margin>
@@ -165,22 +170,19 @@
                         </TextField>
                      </children>
                   </VBox>
-                  <Button fx:id="tabletaddDevice" layoutX="167.0" layoutY="390.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="131.0" text="Add Tablet" onAction="#addTablet"/>
+                  <Button fx:id="tabletaddDevice" layoutX="167.0" layoutY="390.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="131.0" style="-fx-background-color: #2d3250;" text="Add Tablet" onAction="#addTablet" textFill="#ffb17a">
+                        <font>
+                           <Font name="System Bold" size="15.0" />
+                        </font></Button>
                </children>
             </AnchorPane>
         </content>
       </Tab>
   </tabs>
 </TabPane>
-   <ListView fx:id="listView" layoutX="535.0" layoutY="89.0" onMouseClicked="#onListClicked" prefHeight="280.0" prefWidth="248.0" />
-   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="535.0" prefHeight="52.0" prefWidth="248.0" text="Added devices" textAlignment="JUSTIFY">
+   <ListView fx:id="listView" layoutX="551.0" layoutY="89.0" onMouseClicked="#onListClicked" prefHeight="294.0" prefWidth="248.0" style="-fx-border-radius: 10; -fx-border-color: #ffb17a; -fx-background-radius: 10; -fx-border-width: 2;" />
+   <Button fx:id="removeDevice" layoutX="616.0" layoutY="417.0" mnemonicParsing="false" onAction="#removeDevice" prefHeight="26.0" prefWidth="131.0" style="-fx-background-color: #2d3250;" text="Remove Device" textFill="#ffb17a">
       <font>
-         <Font size="21.0" />
-      </font>
-      <padding>
-         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-      </padding>
-   </Label>
-   <Button fx:id="removeDevice" layoutX="598.0" layoutY="421.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="131.0" text="remove device" />
-   <Label fx:id="selectedText" alignment="CENTER" layoutX="535.0" layoutY="373.0" prefHeight="44.0" prefWidth="248.0" text="selectedText" />
+         <Font name="System Bold" size="15.0" />
+      </font></Button>
 </AnchorPane>
