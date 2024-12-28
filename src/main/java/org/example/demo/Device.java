@@ -41,6 +41,12 @@ public class Device {
     public void setWeight(double weight) {
         this.weight = weight;
     }
+
+    @Override
+    public String toString() {
+        return "Type: " + type + ", Name: " + name + ", Price: " + price + ", Weight: " + weight;
+    }
+
 }
 
 
