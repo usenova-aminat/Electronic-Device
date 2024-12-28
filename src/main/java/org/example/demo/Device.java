@@ -15,7 +15,7 @@ public class Device {
         this.weight = weight;
     }
     public Type getType() {
-        return type;  // Доступ к значению enum
+        return type;
     }
 
     public String getName() {

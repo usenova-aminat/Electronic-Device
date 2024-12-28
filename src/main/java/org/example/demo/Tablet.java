@@ -12,6 +12,6 @@ public class Tablet extends Device {
 
     @Override
     public String toString() {
-        return super.toString() + "\nbatteryLife: " + batteryLife + "\nhasStylus: " + hasStylus;  // Исправил на hasStylus
+        return super.toString() + "\nbatteryLife: " + batteryLife + "\nhasStylus: " + hasStylus;
     }
 }

@@ -57,7 +57,7 @@ public class HelloController {
 
             Smartphone smartphone = new Smartphone(name, price, weight, screenSize, cameraResolution);
             devices.add(smartphone);
-            System.out.println("Added smartphone: " + smartphone);  // Проверка добавленного устройства
+            System.out.println("Added smartphone: " + smartphone);
             System.out.println("Devices size: " + devices.size());
 
             clearSmartphoneFields();
@@ -84,7 +84,7 @@ public class HelloController {
             double processorSpeed = Double.parseDouble(laptopProcessorTypeField.getText());
 
             Laptop laptop = new Laptop(name, price, weight, ram, processorSpeed);
-            devices.add(laptop); // Добавляем ноутбук в список
+            devices.add(laptop);
             clearLaptopFields();
         } catch (NumberFormatException e) {
             System.out.println("Wrong input");
@@ -107,13 +107,13 @@ public class HelloController {
             int batteryLife = Integer.parseInt(tabletBatteryLifeField.getText());
             boolean hasStylus = Boolean.parseBoolean(tabletHasStylusField.getText());
 
-            // Создаем объект Tablet с правильными параметрами
+
             Tablet tablet = new Tablet(name, price, weight, batteryLife, hasStylus);
 
-            // Добавляем планшет в список
+
             devices.add(tablet);
 
-            // Очищаем поля
+
             clearTabletFields();
         } catch (NumberFormatException e) {
             System.out.println("Wrong input");
@@ -130,18 +130,15 @@ public class HelloController {
 
     @FXML
     protected void onListClicked() {
-        // Получаем выбранный объект из ListView
         Device selectedDevice = listView.getSelectionModel().getSelectedItem();
 
     }
     @FXML
     public void removeDevice() {
-        // Получаем выбранное устройство из ListView
         Device selectedDevice = listView.getSelectionModel().getSelectedItem();
 
-        // Проверяем, выбрано ли устройство
+
         if (selectedDevice != null) {
-            // Удаляем устройство из ObservableList
             devices.remove(selectedDevice);
             System.out.println("Device removed: " + selectedDevice);
         } else {

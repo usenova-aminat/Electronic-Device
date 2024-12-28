@@ -2,6 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
@@ -115,7 +116,7 @@
                         </TextField>
                      </children>
                   </VBox>
-                  <Button fx:id="laptopaddDevice" layoutX="167.0" layoutY="390.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="131.0" style="-fx-background-color: #2d3250;" text="Add Laptop" onAction="#addLaptop" textFill="#ffb17a">
+                  <Button fx:id="laptopaddDevice" layoutX="167.0" layoutY="390.0" mnemonicParsing="false" onAction="#addLaptop" prefHeight="26.0" prefWidth="131.0" style="-fx-background-color: #2d3250;" text="Add Laptop" textFill="#ffb17a">
                         <font>
                            <Font name="System Bold" size="15.0" />
                         </font></Button>
@@ -170,7 +171,7 @@
                         </TextField>
                      </children>
                   </VBox>
-                  <Button fx:id="tabletaddDevice" layoutX="167.0" layoutY="390.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="131.0" style="-fx-background-color: #2d3250;" text="Add Tablet" onAction="#addTablet" textFill="#ffb17a">
+                  <Button fx:id="tabletaddDevice" layoutX="167.0" layoutY="390.0" mnemonicParsing="false" onAction="#addTablet" prefHeight="26.0" prefWidth="131.0" style="-fx-background-color: #2d3250;" text="Add Tablet" textFill="#ffb17a">
                         <font>
                            <Font name="System Bold" size="15.0" />
                         </font></Button>
@@ -185,4 +186,9 @@
       <font>
          <Font name="System Bold" size="15.0" />
       </font></Button>
+   <Label alignment="CENTER" layoutX="555.0" layoutY="22.0" prefHeight="34.0" prefWidth="248.0" text="Added Devices" textFill="WHITE">
+      <font>
+         <Font size="23.0" />
+      </font>
+   </Label>
 </AnchorPane>
